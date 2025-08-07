@@ -1,0 +1,234 @@
+html {
+    scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: "Arapey", sans-serif;
+        padding: 0;
+        margin: 0;
+        background-color: rgb(186, 211, 219);
+    }
+
+    nav {
+        position: sticky;
+        top: 0;
+        background-color: #010340;
+        color: white;
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+
+    .navDrpDwn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        float: right;
+    }
+
+    .navDrpDwn-Content {
+        display: none;
+        position: absolute;
+        top: 75px;
+        right: -50px;
+        background-color: #080b63;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .navDrpDwn-Content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .navDrpDwn-Content a:hover {
+        background-color: #f1f1f1;
+        color: #080b63
+    }
+
+    .navDrpDwn:hover .navDrpDwn-Content {
+        display: block;
+    }
+
+    .homeIntro {
+        background: url("./img/fotokedai/foto1.jpg");
+        background-repeat: no-repeat; 
+        background-position: center center;
+        background-size: cover;  
+        margin: 0;
+        min-height: 100vh;
+        color: white;
+        overflow: hidden;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        display: flex;
+    }
+
+    .homeIntroHeader1 {
+        text-shadow: 1px 1px 10px #03066b;
+        text-align: center;
+        font-size: 100px;
+        z-index: 1;
+    }
+
+    .homeIntroHeader2 {
+        text-shadow: 1px 1px 10px #03066b;
+        text-align: center;
+        margin-left: 25px;
+        font-size: 25px;
+        font-style: italic;
+        z-index: 1;
+    }
+
+    .homeIntroBg {
+        display: flex;
+        background-color: rgb(89, 115, 185);
+        opacity: 30%;
+        width: 750px;
+        height: 750px;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    .tentangKami {
+        scroll-margin-top: 140px;
+    }
+
+    .tentangKami-Content {
+        height: 150px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border: 2px solid rgb(134, 153, 158);
+        background-color: rgb(172, 195, 202);
+    }
+
+    .tentangKamiHeader {
+        padding-top: 10px;
+        text-align: center;
+        font-style: italic;
+        color: whitesmoke;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    .tentangKami-Quote {
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        text-shadow: 2px 2px 5px black;
+        padding-bottom: 10px;
+    }
+
+    .tentangKami-Quote-Cite {
+        text-align: left;
+        color: white;
+        font-size: 20px;
+        text-shadow: 2px 2px 5px black;
+        padding-bottom: 20px;
+    }
+
+    .tentangKami-Quote-Cite a {
+        color: white;
+    }
+
+    .redirects {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .redirectItem{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-image: linear-gradient(rgb(186, 211, 219), #121464);
+    }
+
+    .redirectTitle {
+        font-size: 30px;
+        color: whitesmoke;
+        text-shadow: 2px 2px 5px black;
+    }
+    
+    .redirectButton {
+        padding: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 20px;
+        min-width: 30%;
+        background-color: white;
+        color: #010340;
+        -webkit-box-shadow: 0px 0px 13px #010340;
+        box-shadow: 0px 0px 13px #010340;
+        margin-bottom: 20px;
+    }
+
+    .redirectButton:hover {
+        background-color: #010340;
+        color: white;
+        font-weight: bold;
+    }
+
+    footer {
+        flex: 3;
+        background-color:#010340;
+        display: flex;
+        color: white;
+    }
+
+    .footerLeft {
+        display: flex;
+    }
+
+    .footerCenter {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 100px;
+        padding-right: 50px;
+    }
+
+    .fMenuTitle {
+        font-size: 30px;
+    }
+
+    .fList {
+        padding: 0;
+        list-style: none;
+    }
+    
+    .fListItem {
+        margin-bottom: 10px;
+        color: gray;
+        cursor: pointer;
+    }
+
+    .fListItem a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footerRight {
+        flex: 1;
+        padding-left: 50px;
+        padding-right: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .fIcons{
+        display: flex;
+    }
+    
+    .fIcon{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }

@@ -1,0 +1,146 @@
+html {
+    scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: "Arapey", sans-serif;
+        padding: 0;
+        margin: 0;
+        background-color: rgb(186, 211, 219);
+    }
+
+    nav {
+        position: sticky;
+        top: 0;
+        background-color: #010340;
+        color: white;
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+
+    .navDrpDwn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        float: right;
+    }
+
+    .navDrpDwn-Content {
+        display: none;
+        position: absolute;
+        top: 75px;
+        right: -50px;
+        background-color: #080b63;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .navDrpDwn-Content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .navDrpDwn-Content a:hover {
+        background-color: #f1f1f1;
+        color: #080b63
+    }
+
+    .navDrpDwn:hover .navDrpDwn-Content {
+        display: block;
+    }
+
+    .lokasi {
+        scroll-margin-top: 140px;
+    }
+
+    .lokasiTitle {
+        text-align: center;
+        font-size: 2em;
+        margin-top: 20px;
+        color: #010340;
+        text-decoration: underline;
+    }
+
+    .lokasiItem {
+        display: flex;
+        background-color: rgb(217, 243, 252);
+        border: 2px solid black;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .lokasiItemItem {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lokasiImg {
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        margin-right: 20px;
+    }
+
+    footer {
+        flex: 3;
+        background-color:#010340;
+        display: flex;
+        color: white;
+    }
+
+    .footerLeft {
+        display: flex;
+    }
+
+    .footerCenter {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 100px;
+        padding-right: 50px;
+    }
+
+    .fMenuTitle {
+        font-size: 30px;
+    }
+
+    .fList {
+        padding: 0;
+        list-style: none;
+    }
+    
+    .fListItem {
+        margin-bottom: 10px;
+        color: gray;
+        cursor: pointer;
+    }
+
+    .fListItem a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footerRight {
+        flex: 1;
+        padding-left: 50px;
+        padding-right: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .fIcons{
+        display: flex;
+    }
+    
+    .fIcon{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
